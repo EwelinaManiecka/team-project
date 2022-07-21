@@ -9,7 +9,7 @@
   font-size: 16px;
   line-height: 21px;
 
-  color: $font-dark-pink;
+  color: $main-color;
   height: 44px;
   width: 180px;
   border: 0;
@@ -19,7 +19,7 @@
   &:hover,
   &:focus {
     color: white;
-    background-color: $font-dark-pink;
+    background-color: $main-color;
     & > svg {
       fill: white;
     }
@@ -46,7 +46,7 @@
   & > svg {
     width: 20px;
     height: 20px;
-    fill: $font-dark-pink;
+    fill: $main-color;
     margin-left: 12px;
   }
 
@@ -78,4 +78,5 @@
       transform: rotate(90deg);
     }
   }
+}
 }
