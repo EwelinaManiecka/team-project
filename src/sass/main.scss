@@ -2,10 +2,12 @@
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
  */
-
+ @import './vars';
+ @import './base';
 // Style dla pliku z przykładem HTML fragmentu
 // @import './example';
-@import './base';
+
 @import './buttons';
 @import './mobile-menu';
 @import './vars';
+@import './customer';
