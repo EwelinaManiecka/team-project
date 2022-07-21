@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ice cream</title>
+
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+  />
+  <link rel="stylesheet" href="./sass/main.scss" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
+    rel="stylesheet"
+  />
+
+  </head>
+  <style>
+    
+.product__list {
+    list-style-type: none;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+.product__item {
+    max-width: 329px;
+    height: 485px;
+    border: none;
+    border-radius: 24px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 185px;
+}
+
+.bg__1 {
+    background-color: #FFB8CA;
+}
+
+.bg__2 {
+    background-color: #F0D1A5;
+}
+
+.bg__3 {
+    background-color: #C2E297;
+}
+
+.product__title {
+    font-family: 'Titan One';
+    font-size: 58px;
+    color: #D41443;
+    font-weight: 400;
+    line-height: 1.5;
+    display: block;
+    text-align: center;
+    margin-bottom: 188px;
+    margin-top: auto;
+}
+
+a {
+    font-family: 'Titan One';
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+    color: #FFA5BA;
+    display: block;
+    text-align: center;
+}
+
+.product__name {
+    font-family: 'Titan One';
+    color: #FFFFFF;
+    font-weight: 400;
+    text-align: center;
+    position: relative;
+    top: -144px;
+}
+
+.product__description {
+    font-family: 'DM Sans';
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.5;
+    color: #FFFFFF;
+    text-align: center;
+    position: relative;
+    top: -120px;
+}
+
+.product__decorate {
+    width: 30px;
+    height: 30px;
+}
+
+.product__name::after {
+    content: url(/src/images/icon-doct.svg#icon-doct);
+    fill: #D41443;
+    width: 30px;
+}
+
+/* .product__decorate {
+    width: 30px;
+    height: 30px;
+    fill: #FFFFFF;
+} */
+
+img {
+    display: block;
+    width: 100%;
+}
+
+.product__image {
+    position: relative;
+    width: 100%;
+    top: -150px;
+    left: -37px;
+}
+
+</style>
+
+<div class="container">
+    <a id="products">100% natural</a>
+    <h2 class="product__title">Products</h2>
+    <ul class="product__list">
+        <li class="product__item bg__1">
+            <figure class="product__image">
+                <img 
+                srcset="../images/products/product_1_desktop_@2x.png 740w,
+                ../images/products/product_1_mobile_@1x.png 450w,
+                ../images/products/product_1_mobile_@2x.png 900w,
+                ../images/products/product_1_tablet_@1x.png 354w,
+                ../images/products/product_1_tablet_@2x.png 708w,
+                ../images/products/product_1_desktop_@1x.png 370w"
+                sizes="(min-width: 480px) 400px,
+                (min-width: 768px) calc(50vw - 30px),
+                (min-width: 1200px) calc(100vw - 30px)"
+                alt="ice cream"/>
+            </figure>
+            <h3 class="product__name">Ice cream</h3>
+            <!-- <svg class="product__decorate">
+                <use href="/src/images/icon-doct.svg#icon-doct"></use>
+            </svg> -->
+            <p class="product__description product__description--one">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+        </li>
+        <li class="product__item bg__2">
+            <figure class="product__image">
+                <img
+                srcset="..images/products/product_2_desktop_@2x.png 740w,
+                ../images/products/product_2_mobile_@1x.png 450w,
+                ../images/products/product_2_mobile_@2x.png 900w,
+                ../images/products/product_2_tablet_@1x.png 354w,
+                ../images/products/product_2_tablet_@2x.png 708w,
+                ../images/products/product_2_desktop_@1x.png 370w"
+                sizes="(min-width: 480px) 400px,
+                (min-width: 768px) calc(50vw - 30px),
+                (min-width: 1200px) calc(100vw - 30px)"
+                alt="ice coffee">
+            </figure>
+            <h3 class="product__name">Ice coffee</h3>
+            <p class="product__description product__description--two">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+        </li>
+        <li class="product__item bg__3">
+            <figure class="product__image">
+                <img
+                srcset="..images/products/product_3_desktop_@2x.png 740w,
+                ../images/products/product_3_mobile_@1x.png 450w,
+                ../images/products/product_3_mobile_@2x.png 900w,
+                ../images/products/product_3_tablet_@1x.png 354w,
+                ../images/products/product_3_tablet_@2x.png 708w,
+                ../images/products/product_3_desktop_@1x.png 370w"
+                sizes="(min-width: 480px) 400px,
+                (min-width: 768px) calc(50vw - 30px),
+                (min-width: 1200px) calc(100vw - 30px)"
+                alt="milksheake">
+            </figure>
+            <h3 class="product__name">Milkshakes</h3>
+            <p class="product__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et</p>
+        </li>
+    </ul>
+</div>
