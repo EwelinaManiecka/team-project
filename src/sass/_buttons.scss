@@ -8,6 +8,33 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
+
+  color: $font-dark-pink;
+  height: 44px;
+  width: 180px;
+  border: 0;
+  border-radius: 22px;
+  transition: 250ms color, 250ms background-color, 250ms fill;
+  cursor: pointer;
+  &:hover,
+  &:focus {
+    color: white;
+    background-color: $font-dark-pink;
+    & > svg {
+      fill: white;
+    }
+  }
+  &--product {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    & > svg {
+      width: 16px;
+      height: 16px;
+      margin: 0;
+    }
+  }
+
   color: #d41443;
   height: 44px;
   width: 100%;
@@ -15,12 +42,20 @@
   border-radius: 22px;
   cursor: pointer;
 
+
   & > svg {
     width: 20px;
     height: 20px;
     fill: $font-dark-pink;
     margin-left: 12px;
   }
+
+
+  &--mobile {
+    width: 100%;
+  }
+
+
   &--close {
     background: url(../images/close.svg);
     fill: white;
@@ -36,6 +71,9 @@
     transform: rotate(-90deg);
     transition: 250ms transform;
     &:hover,
+
+    &:focus {
+
     &:focus  {
       transform: rotate(90deg);
     }
