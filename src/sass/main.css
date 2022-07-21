@@ -131,8 +131,7 @@ ul {
 }
 .customer__review {
   z-index: 1;
-  -webkit-text-decoration-color: #E1E1E1;
-          text-decoration-color: #E1E1E1;
+  text-decoration-color: #E1E1E1;
   position: relative;
   font-family: "DM Sans";
   font-style: normal;
@@ -162,4 +161,63 @@ ul {
   background-position: center;
   background-repeat: no-repeat;
   margin-top: 15px;
+}
+
+.footer__title {
+  font-family: "Titan One";
+  text-transform: uppercase;
+  font-size: 18px;
+  line-height: 1.17;
+  text-transform: uppercase;
+  color: #FFA5BA;
+  max-width: 232px;
+  margin-bottom: 17px;
+}
+.footer__title--big {
+  font-family: "Titan One";
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #D41443;
+  max-width: 200px;
+  margin-top: 0;
+}
+.footer__contact-us {
+  font-family: "DM Sans", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.83;
+  text-align: right;
+  color: #000000;
+  margin-bottom: 23px;
+}
+.footer__contact-us--phone {
+  color: #D41443;
+}
+.footer__copyright {
+  font-family: "DM Sans";
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  text-align: center;
+  color: #907E82;
+  margin: 22px auto 0;
+  max-width: 150px;
+}
+
+.socials-list {
+  display: flex;
+  justify-content: flex-end;
+  list-style-type: none;
+  margin-left: -28px;
+  margin-bottom: 46px;
+}
+.socials-list__item {
+  margin-left: 28px;
+}
+.socials-list__icon {
+  width: 32px;
+  height: 32px;
 }/*# sourceMappingURL=main.css.map */

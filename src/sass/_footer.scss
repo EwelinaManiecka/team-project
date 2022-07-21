@@ -1,0 +1,51 @@
+.footer {
+
+    &__title {
+        font-family: 'Titan One';
+        text-transform: uppercase;
+        font-size: 18px;
+        line-height: 1.17;
+        text-transform: uppercase;
+        color: #FFA5BA;
+        max-width: 232px;
+        margin-bottom: 17px;
+    }
+
+    &__title--big {
+        font-family: 'Titan One';
+        font-size: 34px;
+        line-height: 1.15;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: #D41443;
+        max-width: 200px;
+        margin-top: 0;
+    }
+
+    &__contact-us {
+        font-family: 'DM Sans', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 1.83;
+        text-align: right;
+        color: #000000;
+        margin-bottom: 23px;
+    }
+
+    &__contact-us--phone {
+        color: #D41443;
+    }
+
+    &__copyright {
+        font-family: 'DM Sans';
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.52;
+        text-align: center;
+        color: #907E82;
+        margin: 22px auto 0;
+        max-width: 150px;
+    }
+
+}
