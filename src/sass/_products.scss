@@ -1,7 +1,7 @@
 .products__title {
     font-family: 'Titan One';
     font-size: 58px;
-    color: #D41443;
+    color: $main-color;
     font-weight: 400;
     line-height: 1.5;
     display: block;
@@ -15,7 +15,7 @@ a {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.2;
-    color: #FFA5BA;
+    color: $sticker-color;
     display: block;
     text-align: center;
 }
@@ -39,7 +39,7 @@ a {
 
 .product__name {
     font-family: 'Titan One';
-    color: #FFFFFF;
+    color: $description-1;
     font-weight: 400;
     text-align: center;
     position: relative;
@@ -57,7 +57,7 @@ a {
     font-size: 14px;
     font-weight: 700;
     line-height: 1.5;
-    color: #FFFFFF;
+    color: $description-1;
     text-align: center;
     position: relative;
     top: -150px;
@@ -72,15 +72,15 @@ a {
 
 
 .bg__1 {
-    background-color: #FFB8CA;
+    background-color: $bg-header-color;
 }
 
 .bg__2 {
-    background-color: #F0D1A5;
+    background-color: $coffee-color;
 }
 
 .bg__3 {
-    background-color: #C2E297;
+    background-color: $food-color;
 }
 
 img {
