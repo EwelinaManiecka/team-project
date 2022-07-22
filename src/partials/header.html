@@ -1,97 +1,75 @@
-<!DOCTYPE html>
-<html lang="en">
+<header class="header">
+    <div class="container">
+        <div class="navigation">
+            <img class="navigation-logo" src="../images/header/header-logo.png" />
+            <nav class="navigation-menu">
+                <ul class="navigation-menu-list">
+                    <li><a class="navigation-menu-list__item" href="#home">Home</a></li>
+                    <li><a class="navigation-menu-list__item" href="#About us">About us</a></li>
+                    <li><a class="navigation-menu-list__item" href="#How it's made">How it`s made</a></li>
+                    <li><a class="navigation-menu-list__item" href="#Our products">Our products</a></li>
+                    <li><a class="navigation-menu-list__item" href="#Contacts">Contacts</a></li>
+                </ul>
+            </nav>
+            <button class="navigation-mobile-menu js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+                <svg class="navigation-mobile-menu__icon">
+                    <use href="../images/header/sprite.svg#icon-Burger"></use>
+                </svg></button>
+            <button class="button-buy">Buy now
+                <svg>
+                    <use href="../images/icons.svg#icon-right"></use>
+                </svg></button>
 
-<head>
-    <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
-    <link rel="stylesheet" href="../sass/main.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Titan+One&display=swap"
-        rel="stylesheet" />
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hero-header</title>
-</head>
-
-<body>
-    <header class="header">
-        <div class="container">
-            <div class="navigation">
-                <img class="navigation-logo" src="../images/header/header-logo.png" />
-                <nav class="navigation-menu">
-                    <ul class="navigation-menu-list">
-                        <li><a class="navigation-menu-list__item" href="#home">Home</a></li>
-                        <li><a class="navigation-menu-list__item" href="#About us">About us</a></li>
-                        <li><a class="navigation-menu-list__item" href="#How it's made">How it`s made</a></li>
-                        <li><a class="navigation-menu-list__item" href="#Our products">Our products</a></li>
-                        <li><a class="navigation-menu-list__item" href="#Contacts">Contacts</a></li>
-                    </ul>
-                </nav>
-                <button class="navigation-mobile-menu js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
-                    <svg class="navigation-mobile-menu__icon">
-                        <use href="../images/header/sprite.svg#icon-Burger"></use>
-                    </svg></button>
-                <button class="button-buy">Buy now
-                    <svg>
-                        <use href="../images/icons.svg#icon-right"></use>
-                    </svg></button>
-
-            </div>
-            <div class="hero">
-                <div class="hero-left">
-                    <div class="hero-title">
-                        <p class="hero-title-text">ICE CREAM MADE WITH <span class="hero-title-text__big">PASSION</span>
-                        </p>
-                        <button class="hero-title-products">Products</button>
-                        <button class="hero-title-how">How it's made?</button>
-                    </div>
-                    <div class="hero-lorem">
-                        <img class="hero-lorem-milk" srcset="
+        </div>
+        <div class="hero">
+            <div class="hero-left">
+                <div class="hero-title">
+                    <p class="hero-title-text">ICE CREAM MADE WITH <span class="hero-title-text__big">PASSION</span>
+                    </p>
+                    <button class="hero-title-products">Products</button>
+                    <button class="hero-title-how">How it's made?</button>
+                </div>
+                <div class="hero-lorem">
+                    <img class="hero-lorem-milk" srcset="
                         ../images/header/header-milk188x191.png 370w,
                         ../images/header/header-milk124x126.png 354w,
                         ../images/header/header-milk124x126@2x.png 708w"
-                            sizes="(min-width: 1200px) 188px, (min-width: 768px) 124px"
-                            alt="Pitcher with splashing milk">
-                        <p class="hero-lorem-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod
-                            tempor
-                            incididunt ut labore et</p>
-                    </div>
+                        sizes="(min-width: 1200px) 188px, (min-width: 768px) 124px" alt="Pitcher with splashing milk">
+                    <p class="hero-lorem-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                        eiusmod
+                        tempor
+                        incididunt ut labore et</p>
                 </div>
-                <div class="hero-middle">
-                    <div class="hero-circle">
-                        <img class="hero-image-icecream" srcset="../images/header/header-icecream171x410.png 340w,
+            </div>
+            <div class="hero-middle">
+                <div class="hero-circle">
+                    <img class="hero-image-icecream" srcset="../images/header/header-icecream171x410.png 340w,
                         ../images/header/header-icecream171x410@2x.png 680w,
                         ../images/header/header-icecream143x336.png 354w,
                         ../images/header/header-icecream143x336@2x.png 708w,                         
                         ../images/header/header-icecream236x557.png 370w"
-                            sizes="(min-width: 1200px) 236px, (min-width: 768px) 143px (min-width: 320px) 171px"
-                            alt="Big ice cream" />
-                    </div>
-                </div>
-
-                <div class="hero-right">
-                    <div class="hero-locations">
-                        <div class="hero-locations__cafes">
-                            <p class="hero-locations__cafes-numbers">16</p>
-                            <p class="hero-locations__cafes-text">cafes</p>
-                            <svg></svg>
-                        </div>
-                        <div class="hero-locations__foodtrucks">
-                            <p class="hero-locations__foodtrucks-numbers">23</p>
-                            <p class="hero-locations__foodtrucks-text">food trucks</p>
-                            <svg></svg>
-                        </div>
-                    </div>
-                    <img class="hero-image-lady" src="../images/header/header-person293x232.png" />
+                        sizes="(min-width: 1200px) 236px, (min-width: 768px) 143px (min-width: 320px) 171px"
+                        alt="Big ice cream" />
                 </div>
             </div>
-        </div>
-        </div>
-        </div>
-    </header>
-</body>
 
-</html>
+            <div class="hero-right">
+                <div class="hero-locations">
+                    <div class="hero-locations__cafes">
+                        <p class="hero-locations__cafes-numbers">16</p>
+                        <p class="hero-locations__cafes-text">cafes</p>
+                        <svg></svg>
+                    </div>
+                    <div class="hero-locations__foodtrucks">
+                        <p class="hero-locations__foodtrucks-numbers">23</p>
+                        <p class="hero-locations__foodtrucks-text">food trucks</p>
+                        <svg></svg>
+                    </div>
+                </div>
+                <img class="hero-image-lady" src="../images/header/header-person293x232.png" />
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</header>
