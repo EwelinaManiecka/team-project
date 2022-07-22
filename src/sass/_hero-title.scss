@@ -1,0 +1,62 @@
+.hero-title {
+  padding-top: 137px;
+
+  width: 216px;
+  position: relative;
+  z-index: 1000;
+}
+
+.hero-title-products {
+  width: 61px;
+  height: 24px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+  margin-right: 8px;
+  border: none;
+  color: #ffffff;
+  background: #d41443;
+  border-radius: 20px;
+}
+
+.hero-title-how {
+  width: 83px;
+  height: 24px;
+  font-family: 'DM Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 10px;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+
+  border: none;
+  color: #d41443;
+  background: #fff;
+  border-radius: 20px;
+}
+@media screen and (min-width: 768px) {
+  .hero-title {
+    margin-top: 16px;
+    margin-left: 14px;
+    height: 202px;
+    width: 277px;
+    padding: 0;
+    margin-right: 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    margin-top: 84px;
+    margin-left: 75px;
+    height: 202px;
+    width: 277px;
+    padding: 0;
+  }
+}

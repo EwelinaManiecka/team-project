@@ -1,0 +1,33 @@
+.navigation-mobile-menu {
+  display: flex;
+  margin-right: 0px;
+  background-color: pink;
+  border: none;
+
+  &__icon {
+    width: 20px;
+    height: 12px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navigation-menu {
+    display: flex;
+    margin-right: 0px;
+    background-color: pink;
+    border: none;
+    margin-right: 160px;
+
+    &__icon {
+      width: 20px;
+      height: 12px;
+      cursor: pointer;
+    }
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navigation-mobile-menu {
+    display: none;
+  }
+}

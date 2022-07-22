@@ -1,0 +1,22 @@
+.hero-lorem {
+  display: none;
+  align-items: center;
+  margin-top: 56px;
+  margin-left: 37px;
+}
+@media screen and (min-width: 768px) {
+  .hero-lorem {
+    display: flex;
+    align-items: center;
+    margin-top: 19px;
+    margin-left: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero-lorem {
+    display: flex;
+    align-items: center;
+    margin-top: 56px;
+    margin-left: 37px;
+  }
+}

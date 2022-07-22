@@ -1,0 +1,19 @@
+.navigation-logo {
+  width: 199px;
+  height: 50px;
+  margin: 0;
+}
+@media screen and (min-width: 768px) {
+  .navigation-logo {
+    width: 199px;
+    height: 50px;
+    margin-right: 110px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .navigation-logo {
+    width: 199px;
+    height: 50px;
+    margin-right: 110px;
+  }
+}

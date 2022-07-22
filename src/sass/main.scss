@@ -2,15 +2,28 @@
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
  */
- @import './vars';
- @import './base';
+
 // Style dla pliku z przykładem HTML fragmentu
-// @import './example';
-
-@import './buttons';
+@import './example';
 @import './mobile-menu';
-@import './products';
-@import './customer';
-@import './footer';
-@import './socials-list';
-
+@import './header';
+@import './mobile-menu';
+@import './vars';
+@import './hero';
+@import './hero-right';
+@import './navigation';
+@import './navigation-menu';
+@import './hero-circle';
+@import './hero-lorem';
+@import './hero-lorem-milk';
+@import './hero-lorem-text';
+@import './hero-title';
+@import './hero-title-text';
+@import './navigation-logo';
+@import './navigation-menu-list';
+@import './hero-image-icecream';
+@import './hero-image-lady';
+@import './hero-middle';
+@import './hero-locations';
+@import './navigation-mobile-menu';
+@import './base';
