@@ -2,8 +2,8 @@
  * Główny plik dla stylów.
  * Wszystkie partials podłączamy tutaj.
  */
- @import './vars';
- @import './base';
+@import './vars';
+@import './base';
 // Style dla pliku z przykładem HTML fragmentu
 // @import './example';
 
@@ -13,4 +13,4 @@
 @import './customer';
 @import './footer';
 @import './socials-list';
-
+@import './hero-header';
