@@ -1,0 +1,69 @@
+.advantages {
+    display: none;
+}
+
+.advantage {
+
+    &__title {
+        font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 1.14;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    
+    color: #D41443;
+    }
+    
+    &__description {
+        font-family:'DM Sans';
+    font-size: 16px;
+    line-height: 176%;
+    color: #000;
+    
+        font-weight: 700;
+        margin-left: 0;
+        margin-right: 0;
+    }
+        
+    &-bg {
+        background: #FFF5F6;
+    }
+    
+    &__img {
+        margin-top: 38px;
+    }
+}
+
+
+
+@media screen and (min-width: 768px) {
+    .advantage {
+        display: flex;
+        margin-left: -44px;
+        
+    }}
+
+    @media screen and (min-width: 1200px) {
+    .advantage {
+        display: flex;
+        margin-left: 65px;
+        
+    }}
+
+    @media screen and (min-width: 768px) {
+    .advantage__item {
+        padding-left: 60px;
+        
+    }}
+
+    @media screen and (min-width: 1200px) {
+    .advantage__item {
+        padding-left: 30px;
+        
+    }}
+
+
+
+   
