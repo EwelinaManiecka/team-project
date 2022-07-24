@@ -1,0 +1,188 @@
+   .contacts {
+       background-color: #FFF5F6;
+       margin-top: -84px;
+       padding-bottom: 113px;
+   }
+
+   .heading-hidden {
+       display: none;
+   }
+
+   .contacts-grid {
+       display: flex;
+       justify-content: center;
+       flex-wrap: wrap;
+       margin-bottom: 54px;
+
+   &__card {
+       background-color: #FFF;
+       box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+       border-radius: 24px;
+       min-width: 220px;
+       padding: 43px 20px;
+       margin-bottom: 20px;
+   
+       &--last {
+       margin-bottom: 0;
+       }
+    }
+
+   &__category {
+       font-family: 'DM Sans';
+       font-weight: 500;
+       font-size: 12px;
+       line-height: 1.86;
+       text-align: center;
+       letter-spacing: 0.04em;
+       text-transform: uppercase;
+       color: #FFF;
+       padding: 3px 33px;
+       border-radius: 6px;
+       margin-bottom: 32px;
+       max-width: 80px;
+
+        &--cafe {
+            background-color: #F0D1A5;
+        }
+
+        &--food-truck {
+            background-color: #C2E297;
+        }
+    }
+
+   &__city {
+       font-family: 'DM Sans';
+       font-size: 12px;
+       font-weight: 500;
+       line-height: 1.9;
+       color: #000;
+       margin-bottom: 10px;
+   }
+
+   &__desc {
+       font-family: 'DM Sans';
+       font-size: 12px;
+       font-weight: 500;
+       line-height: 1.5;
+       color: #907E82;
+       padding-bottom: 25px;
+   }
+
+   &__item {
+       content: '';
+       display: block;
+       border-top: 1px solid #E1E1E1;
+       padding-top: 25px;
+   }
+
+   &__open-time {
+       list-style-type: none;
+       font-family: 'DM Sans';
+       font-size: 12px;
+       font-weight: 500;
+       line-height: 1.875;
+       padding-left: 0;
+       padding-bottom: 25px;
+       margin: 0;
+
+        &--days {
+            color: #000;
+            margin-bottom: 0;
+        }
+
+        &--hours {
+        color: #FFA5BA;
+        margin-top: 0;
+        margin-bottom: 10px;
+    }
+}
+
+   &__link {
+       font-family: 'DM Sans';
+       font-size: 12px;
+       font-weight: 500;
+       line-height: 1.5;
+       text-decoration: none;
+       color: #907E82;
+       margin: 0;
+   
+        &--margin {
+        margin: 0;
+        }
+    }
+   }
+
+   .contacts-buttons {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+   
+       &__btn {
+            font-family: 'DM Sans';
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 21px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+       
+            &--dark {
+                color: #FFFFFF;
+                background-color: #D41342;
+                border-radius: 22px;
+                width: 161px;
+                height: 44px;
+                cursor: pointer;
+                padding: 7px 14px;
+                border: 0;
+            }
+
+            &--light {
+                color: #D41443;
+                background-color: #FFF;
+                border-radius: 22px;
+                width: 161px;
+                height: 44px;
+                margin-top: 10px;
+                cursor: pointer;
+                padding: 7px 14px;
+                border: 0;
+            }
+        }
+    }
+
+   .btn-arrow {
+       margin-left: 10px;
+   }
+
+
+   @media screen and (min-width: 768px) {
+       .contacts-grid {
+           flex-wrap: nowrap;
+           margin-bottom: 81px;
+           font-size: 14px;
+       
+           &__card {
+           min-width: 220px;
+           margin-right: 20px;
+            
+                &--last {
+                    margin-bottom: 0;
+                    margin-right: 0;
+                }
+            }
+        }
+
+        .contacts-buttons {
+            flex-direction: row;
+
+            &__btn {
+
+                &--light {
+                    margin-top: 0;
+                    margin-left: 14.5px;
+                }
+            }
+        }
+    }
