@@ -232,8 +232,7 @@ img {
 }
 .customer__review {
   z-index: 1;
-  -webkit-text-decoration-color: #E1E1E1;
-          text-decoration-color: #E1E1E1;
+  text-decoration-color: #E1E1E1;
   position: relative;
   font-family: "DM Sans";
   font-style: normal;
@@ -307,6 +306,7 @@ img {
   color: #907E82;
   margin: 22px auto 0;
   max-width: 150px;
+  border-top: 1px solid #E1E1E1;
 }
 
 .socials-list {
