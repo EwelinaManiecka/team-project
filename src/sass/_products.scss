@@ -88,6 +88,23 @@ img {
     width: 100%;
 }
 
+.button--product {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  
+    fill: #D41443;
+    height: 25px;
+    width: 25px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -125px;
+    }
+
 @media screen and (min-width: 768px) {
     .product {
         display: flex;
