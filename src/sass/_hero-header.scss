@@ -484,11 +484,13 @@
   display: inline-block;
   align-items: center;
   text-align: center;
-
   border: none;
   color: #d41443;
   background: #fff;
   border-radius: 20px;
+  &:hover {
+    background: #ecebeb;
+  }
 }
 @media screen and (min-width: 768px) {
   .hero-title {
@@ -537,7 +539,7 @@
       background-color: #ffa5ba;
       border-radius: 50%;
       display: block;
-      bottom: -86px;
+      top: -36px;
       left: 40%;
       width: 324px;
       height: 324px;
@@ -594,9 +596,16 @@
   justify-content: space-between;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   display: none;
+
+  &:hover {
+    color: #d41443;
+  }
   &__item {
     text-decoration: none;
     color: white;
+    &:hover {
+      color: #d41443;
+    }
   }
 }
 @media screen and (min-width: 1200px) {
@@ -686,7 +695,9 @@
   border-radius: 22px;
   cursor: pointer;
   margin: 0;
-
+  &:hover {
+    background: #ecebeb;
+  }
   & > svg {
     width: 20px;
     height: 20px;
