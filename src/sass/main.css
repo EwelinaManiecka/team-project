@@ -306,6 +306,7 @@ img {
   color: #907E82;
   margin: 22px auto 0;
   max-width: 150px;
+  border-top: 1px solid #E1E1E1;
 }
 
 .socials-list {
