@@ -1,6 +1,6 @@
 .footer {
     background-color: #FFF5F6;
-    
+
     &__title {
         font-family: 'Titan One';
         text-transform: uppercase;
@@ -39,6 +39,9 @@
     }
 
     &__copyright {
+        border-top: 1px solid #E1E1E1;
+    }
+    &__copyright-text {
         font-family: 'DM Sans';
         font-weight: 700;
         font-size: 14px;
@@ -47,7 +50,16 @@
         color: #907E82;
         margin: 22px auto 0;
         max-width: 150px;
-        border-top: 1px solid #E1E1E1;
     }
+}
 
+@media screen and (min-width: 768px) {
+    .footer {
+        display: flex;
+        justify-content: space-between;
+
+        &__copyright-text {
+            max-width: 100%;
+        }
+    }
 }
