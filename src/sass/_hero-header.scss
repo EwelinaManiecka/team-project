@@ -413,12 +413,16 @@
 }
 @media screen and (min-width: 768px) {
   .hero-title-text {
-    font-size: 38px;
+    font-size: 22px;
+    line-height: 25px;
     color: white;
     margin-bottom: 20px;
+    width: 162px;
+    height: 77px;
 
     &__big {
-      font-size: 58px;
+      font-size: 34px;
+      line-height: 31px;
     }
   }
 }
@@ -431,8 +435,9 @@
     line-height: 44px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-
     color: #ffffff;
+    width: 277px;
+    height: 137px;
 
     &__big {
       font-family: 'Titan One';
@@ -539,8 +544,8 @@
       background-color: #ffa5ba;
       border-radius: 50%;
       display: block;
-      top: -36px;
-      left: 40%;
+      top: -62px;
+      left: 37%;
       width: 324px;
       height: 324px;
     }
@@ -644,6 +649,7 @@
   margin-right: 0px;
   background-color: pink;
   border: none;
+  background: rgba(0, 0, 0, 0);
 
   &__icon {
     width: 20px;
