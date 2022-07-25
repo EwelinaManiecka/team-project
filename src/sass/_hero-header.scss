@@ -416,9 +416,12 @@
     font-size: 38px;
     color: white;
     margin-bottom: 20px;
+     width: 162px;
+    height: 80px;
 
     &__big {
-      font-size: 58px;
+      font-size: 34px;
+      line-height: 31px;
     }
   }
 }
@@ -427,8 +430,8 @@
     font-family: 'Titan One';
     font-style: normal;
     font-weight: 400;
-    font-size: 38px;
-    line-height: 44px;
+    font-size: 22px;
+    line-height: 25px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
 
@@ -539,8 +542,8 @@
       background-color: #ffa5ba;
       border-radius: 50%;
       display: block;
-      top: -36px;
-      left: 40%;
+      top: -62px;
+      left: 38%;
       width: 324px;
       height: 324px;
     }
