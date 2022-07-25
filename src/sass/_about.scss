@@ -15,7 +15,7 @@
 .about{
 
 &__description {
-    font-family:'DM Sans';
+     font-family:'DM Sans';
     font-weight: 500;
 font-size: 16px;
 line-height: 176%;
@@ -24,6 +24,18 @@ margin-right: 30px;
 margin-left: 30px;
 }
 
+@media screen and (min-width: 768px) {
+    &__description {
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    &__description{
+        width: 50%
+    }}
+
+
 &__description--light{
 color:  #907E82;
 }
@@ -31,4 +43,33 @@ color:  #907E82;
 &-bg {
     background: #FFF5F6;
 }
+
+&__img {
+    width: 100%;
+    }
+    
+    
+    @media screen and (min-width: 768px) {
+        &__img {
+            width: 50%;
+        }
+    }
+    
+    @media screen and (min-width: 1200px) {
+        &__img{
+            width: 50%
+        }}
+
+
+@media screen and (min-width: 768px) {
+.about-container{
+display: flex; 
+}
+ }
+        
+@media screen and (min-width: 1200px) {
+.about-container{
+display: flex;
+}}
+         
 }
