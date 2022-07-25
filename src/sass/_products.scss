@@ -157,18 +157,20 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-    a.products,
-a.tradition {
-        font-size: 26px;
+ a.products{
+font-size: 26px;
 line-height: 1.15;
 justify-content: center;
-    }
+}
 }
 
 @media screen and (min-width: 1200px) {
-    a.products,
-a.tradition{
+a.products{
 font-size: 30px;
 line-height: 1.13;
 justify-content: center;
-    }}
+}
+}
+
+
+    
