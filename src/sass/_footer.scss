@@ -43,7 +43,7 @@
     &__copyright {
         border-top: 1px solid #E1E1E1;
         background-color: #FFF5F6;
-        padding-bottom: 25px;
+        padding: 22px auto 25px;
     }
     &__copyright-text {
         font-family: 'DM Sans';
@@ -52,7 +52,6 @@
         line-height: 1.52;
         text-align: center;
         color: #907E82;
-        margin: 22px auto 25px;
         max-width: 150px;
     }
     &__left {
