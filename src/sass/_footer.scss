@@ -1,5 +1,6 @@
 .footer {
     background-color: #FFF5F6;
+    padding: 0;
 
     &__title {
         font-family: 'Titan One';
@@ -32,15 +33,17 @@
         line-height: 1.83;
         text-align: right;
         color: #000000;
+        padding-bottom: 43px;
     }
 
     &__contact-us--phone {
-        color: #000000;
+        color: #D41443;
     }
 
     &__copyright {
         border-top: 1px solid #E1E1E1;
         background-color: #FFF5F6;
+        padding-bottom: 25px;
     }
     &__copyright-text {
         font-family: 'DM Sans';
@@ -52,6 +55,12 @@
         margin: 22px auto 25px;
         max-width: 150px;
     }
+    &__left {
+        padding-left: 20px;
+    }
+    &__right {
+        padding-right: 20px;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -61,16 +70,33 @@
 
         &__copyright-text {
             max-width: 100%;
-            margin: 29px auto 18px;
+            padding: 29px auto 18px;
         }
+
+        &__left {
+            padding-left: 36px;
+        }
+
+        &__right {
+            padding-right: 36px;;
+        }
+
     }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1280px) {
     .footer {
 
         &__copyright-text {
             margin: 9px auto 10px;
+        }
+
+        &__left {
+            padding-left: 114px;
+        }
+
+        &__right {
+            padding-right: 114px;
         }
     }
 }
