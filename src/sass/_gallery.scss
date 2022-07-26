@@ -1,11 +1,24 @@
-.gallery {
-
-    &__title {
-        display: none;
-    }
-    
-    &_img {
-        width: 100%;
-    }
-
+.gallery{
+    background-color:#FFF5F6;
 }
+
+.gallery__title {
+  display: none; 
+}
+
+.gallery_img {
+  width: 100%;
+  padding-top: 97px;
+  margin-bottom: -4px;
+}
+
+@media screen and (min-width: 768px) {
+    .gallery_img {
+        padding-top: 140px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .gallery_img {
+        margin-top: 139px;
+    }} 

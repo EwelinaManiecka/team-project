@@ -33,7 +33,7 @@
     
     .advantage__img {
         margin-top: 38px;
-        width: auto;
+        height: 50px;
         margin-left: 0px;
     }
 
@@ -42,27 +42,23 @@
     .advantage {
         display: flex;
         margin-left: -44px;
-        
     }}
 
     @media screen and (min-width: 1200px) {
     .advantage {
         display: flex;
         margin-left: 65px;
-        
     }}
 
 
     @media screen and (min-width: 768px) {
     .advantage__item {
-        padding-left: 60px;
-        
+        padding-left: 60px; 
     }}
 
     @media screen and (min-width: 1200px) {
     .advantage__item {
-        padding-left: 30px;
-        
+        padding-left: 30px;  
     }}
 
 
