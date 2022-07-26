@@ -18,26 +18,31 @@
 }
 
 @media screen and (min-width: 768px) {
-  .hero-button {
+  .button--hero {
     width: 18px;
     height: 18px;
-    background-image: url(../images/header/arrow-right18x18.png);
+    // background-image: url(../images/header/arrow-right18x18.png);
     border-radius: 50%;
     border: none;
     position: absolute;
-    left: 115px;
+    left: 124px;
     bottom: 1px;
+    & > svg {
+      margin-left: 0;
+    }
+
+    
   }
 }
 @media screen and (min-width: 1280px) {
-  .hero-button {
+  .button--hero {
     width: 26px;
     height: 26px;
-    background-image: url(../images/header/arrow-right26x26.png);
+    // background-image: url(../images/header/arrow-right26x26.png);
     border-radius: 50%;
     border: none;
     position: absolute;
-    left: 205px;
+    left: 218px;
     bottom: 5px;
   }
 }
@@ -478,6 +483,7 @@
   color: #ffffff;
   background: #d41443;
   border-radius: 20px;
+  cursor: pointer;
 }
 
 .hero-title-how {
@@ -495,6 +501,7 @@
   color: #d41443;
   background: #fff;
   border-radius: 20px;
+  cursor: pointer;
   &:hover {
     background: #ecebeb;
   }
