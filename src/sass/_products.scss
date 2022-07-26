@@ -15,6 +15,18 @@
 }
 
 @media screen and (min-width: 768px) {
+    .products__title--tradition {
+        margin-bottom: 100px;
+        
+    }}
+
+    @media screen and (min-width: 1200px) {
+        .products__title--tradition{
+            margin-bottom: 106px;         
+    }}
+
+
+@media screen and (min-width: 768px) {
     .products__title {
         font-size: 48px;
         max-width: 100%;
@@ -48,6 +60,26 @@ a.tradition {
     margin-right: auto;
     padding: 0;
 }
+
+.tradition {
+    padding-top: 125px;
+}
+
+@media screen and (min-width: 768px) {
+    .tradition {
+    font-size: 26px;
+    line-height: 1.15;
+    justify-content: center;
+    }
+ }
+        
+    @media screen and (min-width: 1200px) {
+    .tradition{
+    font-size: 30px;
+    line-height: 1.13;
+    justify-content: center;
+    }
+ }
 
 .product__item {
     max-width: 329px;

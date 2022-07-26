@@ -2,7 +2,7 @@
     color: #D41443;
     background-color: #FFF;
     border-radius: 22px;
-    width: 161px;
+    width: 176px;
     height: 44px;
     margin-top: 10px;
     cursor: pointer;
@@ -10,81 +10,99 @@
     border: 0;
     font-family: 'DM Sans';
     font-weight: bold;
-}
-
-.about{
-
-&__description {
-     font-family:'DM Sans';
-    font-weight: 500;
-font-size: 16px;
-line-height: 176%;
-color: #000;
-margin-right: 30px;
-margin-left: 30px;
+    margin-left: 30px;
+    margin-top: 39px;
 }
 
 @media screen and (min-width: 768px) {
-    &__description {
-        width: 50%;
+    .button--about{
+        margin-bottom: 66px;
+        margin-top: 62px;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    &__description{
-        width: 50%
-    }}
+    .button--about{
+        margin-bottom: 146px;
+        margin-top: 45px;
+    }} 
 
+    .button-arrow {
+        margin-left: 13px;
+        margin-top: 2.5px;
+    }
 
-&__description--light{
-color:  #907E82;
-}
-
-&-bg {
+.about-bg {
     background: #FFF5F6;
 }
 
-&__img {
+@media screen and (min-width: 768px) {
+    .about-container{
+    display: flex; 
     width: 100%;
+    margin-top: 0px;
     }
+     }
+            
+    @media screen and (min-width: 1200px) {
+    .about-container{
+    display: flex;
+    max-width: 100%;
+    margin-top: 0px;
+    }}       
     
+     .about__box1 {
+        width: 100%;
+        margin-top: 0px;
+    }
     
     @media screen and (min-width: 768px) {
-        &__img {
-            width: 50%;
+    .about__box1 {
+        width: 50%;
+    }
+     }
+            
+    @media screen and (min-width: 1200px) {
+    .about__box1 {
+        width: 50%;
+    }} 
+    
+    .about__img {
+        width: 100%;
+        margin-top: 0px;
         }
+    
+    .about__box2 {
+        width: 100%;
     }
     
+    @media screen and (min-width: 768px) {
+    .about__box2 {
+        width: 50%;
+        align-items: center;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+     }
+            
     @media screen and (min-width: 1200px) {
-        &__img{
-            width: 50%
-        }}
-
-
-@media screen and (min-width: 768px) {
-.about-container{
-display: flex; 
-}
- }
-        
-@media screen and (min-width: 1200px) {
-.about-container{
-display: flex;
-}}       
-}
-
-@media screen and (min-width: 768px) {
-    a.tradition {
-    font-size: 26px;
-    line-height: 1.15;
-    justify-content: center;
+    .about__box2 {
+        width: 50%;
+        align-items: center;
+    }} 
+    
+    
+    .about__description {
+        font-family:'DM Sans';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 176%;
+        color: #000;
+        margin-right: 30px;
+        margin-left: 30px;
     }
-    }
-        
-    @media screen and (min-width: 1200px) {
-    a.tradition{
-    font-size: 30px;
-    line-height: 1.13;
-    justify-content: center;
-    }
-    }
+    
+        .about__description--light{
+    color:  #907E82;
+    }        
+    
