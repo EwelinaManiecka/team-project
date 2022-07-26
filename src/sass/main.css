@@ -14,6 +14,9 @@ ul {
   max-width: 1200px;
   padding: 0 20px;
 }
+.container--without-padding {
+  padding: 0px;
+}
 
 .button {
   display: flex;
@@ -61,6 +64,13 @@ ul {
   height: 20px;
   fill: #D41443;
   margin-left: 12px;
+}
+.button--about {
+  margin-left: 30px;
+  width: 176px;
+  height: 44px;
+  padding-left: 37px;
+  display: inline;
 }
 .button--mobile {
   width: 100%;
@@ -492,12 +502,16 @@ ul {
 
 @media screen and (min-width: 768px) {
   .hero-title-text {
-    font-size: 38px;
+    font-size: 22px;
+    line-height: 25px;
     color: white;
     margin-bottom: 20px;
+    width: 162px;
+    height: 77px;
   }
   .hero-title-text__big {
-    font-size: 58px;
+    font-size: 34px;
+    line-height: 31px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -510,6 +524,8 @@ ul {
     letter-spacing: 0.04em;
     text-transform: uppercase;
     color: #ffffff;
+    width: 277px;
+    height: 137px;
   }
   .hero-title-text__big {
     font-family: "Titan One";
@@ -615,8 +631,8 @@ ul {
     background-color: #ffa5ba;
     border-radius: 50%;
     display: block;
-    top: -36px;
-    left: 40%;
+    top: -62px;
+    left: 37%;
     width: 324px;
     height: 324px;
   }
@@ -718,6 +734,7 @@ ul {
   margin-right: 0px;
   background-color: pink;
   border: none;
+  background: rgba(0, 0, 0, 0);
 }
 .navigation-mobile-menu__icon {
   width: 20px;
@@ -849,6 +866,28 @@ ul {
     margin-left: 12px;
   }
 }
+.backdrop {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition-property: transform, visibility, opacity;
+}
+.backdrop--hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translate(100%);
+}
+
+.modal {
+  width: 100px;
+  height: 100px;
+}
+
 .mobile-menu {
   background-color: #e17992;
   height: 100vh;
@@ -887,16 +926,32 @@ ul {
 
 .products__title {
   font-family: "Titan One";
-  font-size: 58px;
+  font-size: 34px;
   color: #D41443;
   font-weight: 400;
-  line-height: 1.5;
+  line-height: 1.15;
   display: block;
   text-align: center;
   margin-bottom: 188px;
   margin-top: auto;
+  text-transform: uppercase;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 200px;
 }
 
+@media screen and (min-width: 768px) {
+  .products__title {
+    font-size: 48px;
+    max-width: 100%;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .products__title {
+    font-size: 58px;
+    line-height: 1.14;
+  }
+}
 a.products {
   font-family: "Titan One";
   font-size: 18px;
@@ -905,7 +960,9 @@ a.products {
   color: #FFA5BA;
   display: block;
   text-align: center;
-  margin-top: 120px;
+  margin-bottom: 15px;
+  margin-top: 100px;
+  text-transform: uppercase;
 }
 
 .product {
@@ -938,6 +995,42 @@ a.products {
   content: ". . .";
   display: block;
   padding-top: 6px;
+}
+
+.product__name.icecream::before {
+  position: relative;
+  content: "";
+  width: 100%;
+  height: 340px;
+  display: block;
+  background-image: url(../images/products/product_1_mobile_@1x.png);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 38px;
+}
+
+.product__name.coffee::before {
+  position: relative;
+  content: "";
+  width: 100%;
+  height: 340px;
+  display: block;
+  background-image: url(../images/products/product_2_mobile_@1x.png);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 38px;
+}
+
+.product__name.milksheake::before {
+  position: relative;
+  content: "";
+  width: 100%;
+  height: 340px;
+  display: block;
+  background-image: url(../images/products/product_3_mobile_@1x.png);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 38px;
 }
 
 .product__description {
@@ -988,9 +1081,20 @@ img {
   cursor: pointer;
   margin-left: auto;
   margin-right: auto;
-  margin-top: -110px;
+  margin-top: -125px;
 }
 
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .product__name.icecream::before {
+    background-image: url(../images/products/product_1_mobile_@2x.png);
+  }
+  .product__name.coffee::before {
+    background-image: url(../images/products/product_2_mobile_@2x.png);
+  }
+  .product__name.milksheake::before {
+    background-image: url(../images/products/product_3_mobile_@2x.png);
+  }
+}
 @media screen and (min-width: 768px) {
   .product {
     display: flex;
@@ -1001,6 +1105,191 @@ img {
   }
   .bg__3 {
     margin-right: 10px;
+  }
+  .product__name.icecream::before {
+    background-image: url(../images/products/product_1_tablet_@1x.png);
+  }
+  .product__name.coffee::before {
+    background-image: url(../images/products/product_2_tablet_@1x.png);
+  }
+  .product__name.milksheake::before {
+    background-image: url(../images/products/product_3_tablet_@1x.png);
+  }
+}
+@media (min-width: 768px) and (min-device-pixel-ratio: 2), (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 768px) and (min-resolution: 192dpi), (min-width: 768px) and (min-resolution: 2dppx) {
+  .product__name.icecream::before {
+    background-image: url(../images/products/product_1_tablet_@2x.png);
+  }
+  .product__name.coffee::before {
+    background-image: url(../images/products/product_2_tablet_@2x.png);
+  }
+  .product__name.milksheake::before {
+    background-image: url(../images/products/product_3_tablet_@2x.png);
+  }
+}
+@media screen and (min-width: 768px) {
+  a.product {
+    font-size: 26px;
+    line-height: 1.15;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1280px) {
+  a.product {
+    font-size: 30px;
+    line-height: 1.13;
+    justify-content: center;
+  }
+}
+@media (min-width: 1280px) {
+  .product__name.icecream::before {
+    background-image: url(../images/products/product_1_desktop_@1x.png);
+  }
+  .product__name.coffee::before {
+    background-image: url(../images/products/product_2_desktop_@1x.png);
+  }
+  .product__name.milksheake::before {
+    background-image: url(../images/products/product_3_desktop_@1x.png);
+  }
+}
+@media (min-width: 1280px) and (min-device-pixel-ratio: 2), (min-width: 1280px) and (-webkit-min-device-pixel-ratio: 2), (min-width: 1280px) and (min-resolution: 192dpi), (min-width: 1280px) and (min-resolution: 2dppx) {
+  .product__name.icecream::before {
+    background-image: url(../images/products/product_1_desktop_@2x.png);
+  }
+  .product__name.coffee::before {
+    background-image: url(../images/products/product_2_desktop_@2x.png);
+  }
+  .product__name.milksheake::before {
+    background-image: url(../images/products/product_3_desktop_@2x.png);
+  }
+}
+.button--about {
+  color: #D41443;
+  background-color: #FFF;
+  border-radius: 22px;
+  width: 161px;
+  height: 44px;
+  margin-top: 10px;
+  cursor: pointer;
+  padding: 7px 14px;
+  border: 0;
+  font-family: "DM Sans";
+  font-weight: bold;
+}
+
+.about__description {
+  font-family: "DM Sans";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 176%;
+  color: #000;
+  margin-right: 30px;
+  margin-left: 30px;
+}
+@media screen and (min-width: 768px) {
+  .about__description {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__description {
+    width: 50%;
+  }
+}
+.about__description--light {
+  color: #907E82;
+}
+.about-bg {
+  background: #FFF5F6;
+}
+.about__img {
+  width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .about__img {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about__img {
+    width: 50%;
+  }
+}
+@media screen and (min-width: 768px) {
+  .about .about-container {
+    display: flex;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .about .about-container {
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  a.tradition {
+    font-size: 26px;
+    line-height: 1.15;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  a.tradition {
+    font-size: 30px;
+    line-height: 1.13;
+    justify-content: center;
+  }
+}
+.advantages {
+  display: none;
+}
+
+.advantage__title {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.14;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #D41443;
+}
+.advantage__description {
+  font-family: "DM Sans";
+  font-size: 16px;
+  line-height: 176%;
+  color: #000;
+  font-weight: 700;
+  margin-left: 0;
+  margin-right: 0;
+}
+.advantage-bg {
+  background: #FFF5F6;
+}
+.advantage__img {
+  margin-top: 38px;
+}
+
+@media screen and (min-width: 768px) {
+  .advantage {
+    display: flex;
+    margin-left: -44px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantage {
+    display: flex;
+    margin-left: 65px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .advantage__item {
+    padding-left: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantage__item {
+    padding-left: 30px;
   }
 }
 .customer {
@@ -1064,6 +1353,7 @@ img {
   color: #FFA5BA;
   max-width: 232px;
   margin-bottom: 17px;
+  margin-top: 0;
 }
 .footer__title--big {
   font-family: "Titan One";
@@ -1083,23 +1373,40 @@ img {
   line-height: 1.83;
   text-align: right;
   color: #000000;
-  margin-bottom: 23px;
 }
 .footer__contact-us--phone {
   color: #000000;
 }
 .footer__copyright {
+  border-top: 1px solid #E1E1E1;
+  background-color: #FFF5F6;
+}
+.footer__copyright-text {
   font-family: "DM Sans";
   font-weight: 700;
   font-size: 14px;
   line-height: 1.52;
   text-align: center;
   color: #907E82;
-  margin: 22px auto 0;
+  margin: 22px auto 25px;
   max-width: 150px;
-  border-top: 1px solid #E1E1E1;
 }
 
+@media screen and (min-width: 768px) {
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  .footer__copyright-text {
+    max-width: 100%;
+    margin: 29px auto 18px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer__copyright-text {
+    margin: 9px auto 10px;
+  }
+}
 .socials-list {
   display: flex;
   justify-content: flex-end;
@@ -1129,9 +1436,10 @@ img {
 }
 
 .contacts-grid {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  display: block;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 54px;
 }
 .contacts-grid__card {
@@ -1157,7 +1465,7 @@ img {
   padding: 3px 33px;
   border-radius: 6px;
   margin-bottom: 32px;
-  max-width: 80px;
+  max-width: fit-content;
 }
 .contacts-grid__category--cafe {
   background-color: #F0D1A5;
@@ -1262,6 +1570,7 @@ img {
 
 @media screen and (min-width: 768px) {
   .contacts-grid {
+    display: flex;
     flex-wrap: nowrap;
     margin-bottom: 81px;
     font-size: 14px;
@@ -1269,6 +1578,7 @@ img {
   .contacts-grid__card {
     min-width: 220px;
     margin-right: 20px;
+    margin-top: -84px;
   }
   .contacts-grid__card--last {
     margin-bottom: 0;
@@ -1276,9 +1586,16 @@ img {
   }
   .contacts-buttons {
     flex-direction: row;
+    justify-content: center;
   }
   .contacts-buttons__btn--light {
     margin-top: 0;
     margin-left: 14.5px;
   }
+}
+.gallery__title {
+  display: none;
+}
+.gallery_img {
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
