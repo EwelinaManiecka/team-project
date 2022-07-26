@@ -9,9 +9,10 @@
    }
 
    .contacts-grid {
-       display: flex;
-       justify-content: center;
-       flex-wrap: wrap;
+       display: block;
+       width: fit-content;
+       margin-left: auto;
+       margin-right: auto;
        margin-bottom: 54px;
 
    &__card {
@@ -39,7 +40,7 @@
        padding: 3px 33px;
        border-radius: 6px;
        margin-bottom: 32px;
-       max-width: 80px;
+       max-width: fit-content;
 
         &--cafe {
             background-color: #F0D1A5;
@@ -159,6 +160,7 @@
 
    @media screen and (min-width: 768px) {
        .contacts-grid {
+            display: flex;
            flex-wrap: nowrap;
            margin-bottom: 81px;
            font-size: 14px;
@@ -166,6 +168,7 @@
            &__card {
            min-width: 220px;
            margin-right: 20px;
+           margin-top: -84px;
             
                 &--last {
                     margin-bottom: 0;
@@ -176,6 +179,7 @@
 
         .contacts-buttons {
             flex-direction: row;
+            justify-content: center;
 
             &__btn {
 
