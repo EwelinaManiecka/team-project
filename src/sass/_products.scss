@@ -27,7 +27,8 @@
             line-height: 1.14;        
     }}
 
-a.products {
+a.products,
+a.tradition {
     font-family: 'Titan One';
     font-size: 18px;
     font-weight: 400;
@@ -65,6 +66,7 @@ a.products {
     text-align: center;
     position: relative;
     top: -144px;
+    text-transform: uppercase;
 }
 
 .product__name::after {
@@ -138,11 +140,6 @@ a.products {
 
 .bg__3 {
     background-color: #C2E297;
-}
-
-img {
-    display: block;
-    width: 100%;
 }
 
 .button--product {
