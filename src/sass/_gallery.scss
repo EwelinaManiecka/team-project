@@ -1,5 +1,5 @@
 .gallery{
-    background-color:#FFF5F6;
+    background-color:$bg-other-color;
 }
 
 .gallery__title {
@@ -9,8 +9,7 @@
 .gallery_img {
   width: 100%;
   padding-top: 97px;
-  margin-bottom: -268px;
-  background-color:#FFF5F6;
+  background-color: $bg-other-color;
 }
 
 @media screen and (min-width: 768px) {

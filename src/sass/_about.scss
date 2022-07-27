@@ -1,5 +1,5 @@
 .button--about {
-    color: #D41443;
+    color: $main-color;
     background-color: #FFF;
     border-radius: 22px;
     width: 176px;
@@ -98,12 +98,12 @@
         font-weight: 500;
         font-size: 16px;
         line-height: 176%;
-        color: #000;
+        color: $information-text;
         margin-right: 30px;
         margin-left: 30px;
     }
     
         .about__description--light{
-    color:  #907E82;
+    color:  $description-2;
     }        
     
