@@ -43,7 +43,8 @@
     &__copyright {
         border-top: 1px solid #E1E1E1;
         background-color: #FFF5F6;
-        padding: 22px auto 25px;
+        padding-top: 22px;
+        paddign-bottom: 25px;
     }
     &__copyright-text {
         font-family: 'DM Sans';
@@ -53,6 +54,8 @@
         text-align: center;
         color: #907E82;
         max-width: 150px;
+        margin-left: auto;
+        margin-right: auto;
     }
     &__left {
         padding-left: 20px;
@@ -67,9 +70,12 @@
         display: flex;
         justify-content: space-between;
 
+        &__copyright {
+            padding-top: 29px;
+            padding-bottom: 18px;
+        }
         &__copyright-text {
             max-width: 100%;
-            padding: 29px auto 18px;
         }
 
         &__left {
@@ -86,8 +92,9 @@
 @media screen and (min-width: 1280px) {
     .footer {
 
-        &__copyright-text {
-            margin: 9px auto 10px;
+        &__copyright {
+            padding-top: 9px;
+            padding-bottom: 10px
         }
 
         &__left {
