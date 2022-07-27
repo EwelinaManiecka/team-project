@@ -19,11 +19,11 @@
   
   &:hover,
   &:focus {
-    color: $description-1;
-    background-color: $main-color;
-    & > svg {
-      fill: currentColor;
-    }
+    // color: $description-1;
+    background-color: #ecebeb;
+    // & > svg {
+    //   fill: currentColor;
+    // }
   }
   & > svg {
     width: 20px;
