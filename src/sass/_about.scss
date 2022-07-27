@@ -12,6 +12,10 @@
     font-weight: bold;
     margin-left: 30px;
     margin-top: 39px;
+    &:hover {
+    background-color:#ecebeb;
+    color: $main-color;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -25,7 +29,9 @@
     .button--about{
         margin-bottom: 146px;
         margin-top: 45px;
-    }} 
+        
+    }
+} 
 
     .button-arrow {
         margin-left: 13px;
