@@ -2,7 +2,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: white;
+  background-color: $description-1;
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 700;
@@ -19,7 +19,7 @@
   
   &:hover,
   &:focus {
-    color: white;
+    color: $description-1;
     background-color: $main-color;
     & > svg {
       fill: currentColor;
@@ -48,7 +48,7 @@
 
   &--close {
     background: url(../images/close.svg);
-    fill: white;
+    fill: $description-1;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;

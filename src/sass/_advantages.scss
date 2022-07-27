@@ -11,7 +11,7 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
     
-    color: #D41443;
+    color: $main-color;
     margin-top: 16px;
     margin-bottom: 16px;
     }
@@ -20,7 +20,7 @@
     font-family:'DM Sans';
     font-size: 16px;
     line-height: 176%;
-    color: #000;
+    color:$information-text;
     
     font-weight: 700;
     margin-left: 0;
@@ -29,7 +29,7 @@
     }
         
     .advantage-bg {
-        background: #FFF5F6;
+        background: $bg-other-color;
     }
     
     .advantage__img {

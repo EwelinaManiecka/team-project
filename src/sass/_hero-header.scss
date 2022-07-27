@@ -120,7 +120,7 @@
     line-height: 53px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #d41443;
+    color: $main-color;
     padding-top: 5px;
   }
   &__cafes-text {
@@ -148,7 +148,7 @@
     letter-spacing: 0.04em;
     text-transform: uppercase;
 
-    color: #d41443;
+    color: $main-color;
     padding-top: 5px;
   }
   &__foodtrucks-text {
@@ -179,7 +179,7 @@
       text-align: left;
       letter-spacing: 0.04em;
       text-transform: uppercase;
-      color: #d41443;
+      color: $main-color;
     }
     &__cafes-text {
       font-family: 'DM Sans';
@@ -209,7 +209,7 @@
       text-align: center;
       letter-spacing: 0.04em;
       text-transform: uppercase;
-      color: #d41443;
+      color: $main-color;
     }
     &__foodtrucks-text {
       font-family: 'DM Sans';
@@ -219,7 +219,7 @@
       line-height: 10px;
       text-align: right;
 
-      color: #ffffff;
+      color: $description-1;
     }
   }
 }
@@ -245,7 +245,7 @@
       line-height: 53px;
       letter-spacing: 0.04em;
       text-transform: uppercase;
-      color: #d41443;
+      color: $main-color;
       padding-top: 5px;
     }
     &__cafes-text {
@@ -273,7 +273,7 @@
       letter-spacing: 0.04em;
       text-transform: uppercase;
 
-      color: #d41443;
+      color: $main-color;
       padding-top: 5px;
     }
     &__foodtrucks-text {
@@ -318,7 +318,7 @@
     font-weight: 400;
     font-size: 8px;
     line-height: 150%;
-    color: #ffffff;
+    color: $description-1;
   }
 }
 @media screen and (min-width: 1280px) {
@@ -403,7 +403,7 @@
   letter-spacing: 0.04em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: $description-1;
   margin: 0;
   margin-bottom: 20px;
 
@@ -421,7 +421,7 @@
   .hero-title-text {
     font-size: 22px;
     line-height: 25px;
-    color: white;
+    color: $description-1;
     margin-bottom: 20px;
     width: 162px;
     height: 77px;
@@ -441,7 +441,7 @@
     line-height: 44px;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-    color: #ffffff;
+    color: $description-1;
     width: 277px;
     height: 137px;
 
@@ -454,7 +454,7 @@
       letter-spacing: 0.04em;
       text-transform: uppercase;
 
-      color: #d41443;
+      color: $main-color;
     }
   }
 }
@@ -479,8 +479,8 @@
   text-align: center;
   margin-right: 8px;
   border: none;
-  color: #ffffff;
-  background: #d41443;
+  color: $description-1;
+  background: $main-color;
   border-radius: 20px;
   cursor: pointer;
 }
@@ -497,8 +497,8 @@
   align-items: center;
   text-align: center;
   border: none;
-  color: #d41443;
-  background: #fff;
+  color: $main-color;
+  background: $description-1;
   border-radius: 20px;
   cursor: pointer;
   &:hover {
@@ -550,7 +550,7 @@
     &::before {
       content: '';
       position: absolute;
-      background-color: #ffa5ba;
+      background-color:$sticker-color;
       border-radius: 50%;
       display: block;
       top: -52px;
@@ -569,7 +569,7 @@
     &::before {
       content: '';
       position: absolute;
-      background-color: #ffa5ba;
+      background-color: $sticker-color;
       border-radius: 50%;
       display: block;
       top: -20px;
@@ -601,7 +601,7 @@
 }
 .navigation-menu-list {
   height: 21px;
-  color: white;
+  color: $description-1;
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 700;
@@ -614,13 +614,13 @@
   display: none;
 
   &:hover {
-    color: #d41443;
+    color: $main-color;
   }
   &__item {
     text-decoration: none;
     color: white;
     &:hover {
-      color: #d41443;
+      color: $main-color;
     }
   }
 }
@@ -628,7 +628,7 @@
   .navigation-menu-list {
     width: 541px;
     height: 21px;
-    color: white;
+    color: $description-1;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
@@ -699,13 +699,13 @@
   display: none;
   align-items: center;
   justify-content: center;
-  background-color: white;
+  background-color: $description-1;
   font-family: 'DM Sans';
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
   line-height: 21px;
-  color: #d41443;
+  color: $main-color;
   height: 44px;
   width: 100%;
   border: 0;
@@ -736,13 +736,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: $description-1;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 21px;
-    color: #d41443;
+    color: $main-color;
     height: 44px;
     width: 160px;
     border: 0;
@@ -753,7 +753,7 @@
     & > svg {
       width: 20px;
       height: 20px;
-      fill: #d41443;
+      fill: $main-color;
       margin-left: 12px;
     }
   }
@@ -774,13 +774,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: white;
+    background-color: $description-1;
     font-family: 'DM Sans';
     font-style: normal;
     font-weight: 700;
     font-size: 16px;
     line-height: 21px;
-    color: #d41443;
+    color: $main-color;
     height: 44px;
     width: 160px;
     border: 0;
@@ -791,7 +791,7 @@
     & > svg {
       width: 20px;
       height: 20px;
-      fill: #d41443;
+      fill: $main-color;
       margin-left: 12px;
     }
   }

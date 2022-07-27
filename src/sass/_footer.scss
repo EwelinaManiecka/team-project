@@ -1,5 +1,5 @@
 .footer {
-    background-color: #FFF5F6;
+    background-color: $bg-other-color;
     padding: 0;
 
     &__title {
@@ -8,7 +8,7 @@
         font-size: 18px;
         line-height: 1.17;
         text-transform: uppercase;
-        color: #FFA5BA;
+        color: $sticker-color;
         max-width: 232px;
         margin-bottom: 17px;
         margin-top: 0;
@@ -20,7 +20,7 @@
         line-height: 1.15;
         letter-spacing: 0.04em;
         text-transform: uppercase;
-        color: #D41443;
+        color: $main-color;
         max-width: 200px;
         margin-top: 0;
     }
@@ -37,12 +37,12 @@
     }
 
     &__contact-us--phone {
-        color: #D41443;
+        color: $main-color;
     }
 
     &__copyright {
         border-top: 1px solid #E1E1E1;
-        background-color: #FFF5F6;
+        background-color: $bg-other-color;
         padding-top: 22px;
         padding-bottom: 25px;
     }
@@ -52,7 +52,7 @@
         font-size: 14px;
         line-height: 1.52;
         text-align: center;
-        color: #907E82;
+        color: $description-2;
         max-width: 150px;
         margin-left: auto;
         margin-right: auto;
