@@ -1,5 +1,5 @@
 .customer {
-  padding-top: 80px;
+  padding-top: 348px;
   padding-bottom: 170px;
   display: flex;
   flex-direction: column;
@@ -9,7 +9,8 @@
     width: 85px;
     height: 85px;
     border-radius: 50%;
-    background-image: url('../images/customer1.jpg');
+    background-image: url(../images/customer1.jpg);
+    background-size: cover;
     margin-bottom: 29px;
   }
   &__review {
@@ -68,15 +69,6 @@
       height: 40px;
     }
   }
-  // &__quote {
-  //   z-index: -1;
-  //   position: absolute;
-  //   top: 28px;
-  //   left: 61px;
-  //   width: 54px;
-  //   height: 40px;
-  //   background-image: url('../images/quote.svg');
-  // }
   &__slider {
     width: 72.4px;
     height: 12px;
@@ -88,13 +80,23 @@
 }
 @media screen and (min-width: 768px){
   .customer {
-    padding-top: 121px;
+    padding-top: 389px;
     padding-bottom: 197px;
   }
 }
 @media screen and (min-width: 1280px) {
   .customer {
-    padding-top: 123px;
+    padding-top: 391px;
     padding-bottom: 234px;
   }
 }
+@media (min-device-pixel-ratio: 2),
+    (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .customer {
+      &__picture {
+        background-image: url(../images/customer1@2x.jpg);
+      }
+    }
+  }
