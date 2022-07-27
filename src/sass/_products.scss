@@ -42,8 +42,7 @@
             line-height: 1.14;        
     }}
 
-a.products,
-a.tradition {
+.section__header{
     font-family: 'Titan One';
     font-size: 18px;
     font-weight: 400;
@@ -53,8 +52,9 @@ a.tradition {
     text-align: center;
     
     margin-bottom: 15px;
-    margin-top: 100px;
+    // margin-top: 100px;
     text-transform: uppercase;
+    padding-top: 125px;
 }
 
 .product {
@@ -64,20 +64,20 @@ a.tradition {
     padding: 0;
 }
 
-.tradition {
-    padding-top: 125px;
-}
+// .tradition {
+//     padding-top: 125px;
+// }
 
 @media screen and (min-width: 768px) {
-    .tradition {
+    .section__header {
     font-size: 26px;
     line-height: 1.15;
     justify-content: center;
     }
  }
         
-    @media screen and (min-width: 1200px) {
-    .tradition{
+    @media screen and (min-width: 1280px) {
+    .section__header{
     font-size: 30px;
     line-height: 1.13;
     justify-content: center;
@@ -246,20 +246,20 @@ a.tradition {
     }
 }
 
-@media screen and (min-width: 768px) {
-    a.product {
-        font-size: 26px;
-line-height: 1.15;
-justify-content: center;
-    }
-}
+// @media screen and (min-width: 768px) {
+//     .products {
+//         font-size: 26px;
+// line-height: 1.15;
+// justify-content: center;
+//     }
+// }
 
-@media screen and (min-width: 1280px) {
-    a.product{
-font-size: 30px;
-line-height: 1.13;
-justify-content: center;
-    }}
+// @media screen and (min-width: 1280px) {
+//     .products {
+// font-size: 30px;
+// line-height: 1.13;
+// justify-content: center;
+//     }}
 
 @media(min-width: 1280px) {
     .product__name.icecream::before {
