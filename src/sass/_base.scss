@@ -12,3 +12,13 @@ ul {
     padding: 0px;
 }
 }
+@media screen and (min-width: 768px){
+    .container--customer {
+        padding: 0 74px;
+    }
+}
+@media screen and (min-width: 1280px) {
+    .container--customer {
+        padding: 0 176px;
+    }
+}
